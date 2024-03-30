@@ -1,0 +1,9 @@
+imports:
+  - mustache/presentations.yaml
+
+
+docs:
+  dochub.welcome:
+    title: welcome doc
+    type: markdown
+    source: README.md
