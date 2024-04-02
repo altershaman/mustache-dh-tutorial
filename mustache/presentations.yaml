@@ -1,0 +1,88 @@
+entities:
+  noname:
+
+    presentations:
+
+      root_context:
+        type: markdown
+        template: templates/root_context.md
+        source: > # код презентации
+          ( 
+            "какое-то строковое значение"
+          )
+
+      empty_contexts:
+        type: markdown
+        template: templates/empty_contexts.md
+        source: > # код презентации
+          ( 
+            "какое-то простое значение"
+          )
+
+      nested_contexts:
+        type: markdown
+        template: templates/nested_contexts.md
+        source: > # код презентации
+          ( 
+                {"key1": "value1",
+                 "key2": {
+                  "key2_1": "value2_1"}
+                }
+          )
+
+      nested_contexts_special:
+        type: markdown
+        template: templates/nested_contexts_special.md
+        source: > # код презентации
+          ( 
+                {"objA": {
+                  "title": "Object A",
+                  "has": [
+                    {"title": "Section 1"},
+                    {"title": "Section 2"}
+                  ]
+                 }
+                }
+          )
+
+      arrays_iterating:
+        type: markdown
+        template: templates/arrays_iterating.md
+        source: > # код презентации
+          ( 
+                [ 123,
+                  456,
+                  789
+                ]
+          )
+
+    menu: >
+      (
+        [
+          { "location": "Документы/Mustache Tutorial/Корневой контекст",
+            "link": "/entities/noname/root_context",
+            "order": 100
+          },
+          { "location": "Документы/Mustache Tutorial/Пустые контексты",
+            "link": "/entities/noname/empty_contexts",
+            "order": 200
+          },
+          { "location": "Документы/Mustache Tutorial/Вложенные контексты",
+            "link": "/entities/noname/nested_contexts",
+            "order": 300
+          },
+          { "location": "Документы/Mustache Tutorial/Вложенные контексты (Special case)",
+            "link": "/entities/noname/nested_contexts_special",
+            "order": 400
+          },
+          { "location": "Документы/Mustache Tutorial/Итерирование массивов",
+            "link": "/entities/noname/arrays_iterating",
+            "order": 500
+          }
+
+
+        
+        ]
+      
+      )
+
