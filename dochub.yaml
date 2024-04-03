@@ -7,3 +7,9 @@ docs:
     title: welcome doc
     type: markdown
     source: README.md
+
+
+# todo workshop duration 1.5h at least
+# todo add some simple jsonata
+# refactor lessons for demonstration (1 context many mustaches, {{.}}, {{name}}, {{#}}) and keep exercises for home work  
+ 
